@@ -63,6 +63,7 @@ The project follows a **Star Schema**.
 
 ##  Dashboard Pages
 
+
 ### Executive Summary
 
 Displays:
@@ -118,7 +119,7 @@ Includes:
 
 ### Executive Summary
 
-(Drug_Analysis.png)
+<img width="1920" height="1115" alt="Drug_Analysis" src="https://github.com/user-attachments/assets/7eb78197-4573-4dda-9923-2a9e16b8be35" />
 
 ### Drug Analysis
 
