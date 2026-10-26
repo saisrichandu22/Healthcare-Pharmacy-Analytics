@@ -38,28 +38,36 @@ Healthcare organizations process millions of pharmacy claims every year. Underst
 
 
 
+
 ## Project Structure
 
 ```text
 Healthcare-Pharmacy-Analytics/
+│
 ├── Dashboard/
 │   └── Healthcare_Pharmacy_Analytics.pbix
+│
 ├── Dataset/
 │   ├── raw_partd_prescribers.csv
 │   └── clean_pharmacy_claims.csv
+│
 ├── SQL/
 │   ├── Create_Database.sql
+│   ├── Create_Staging_Table.sql
 │   ├── Create_Tables.sql
 │   ├── Load_Star_Schema.sql
 │   ├── KPI_Queries.sql
 │   └── Validation_Queries.sql
-    ├── Create_Staging_Table.sql
+│
 ├── python/
 │   └── clean_pharmacy_data.py
+│
 ├── Screenshots/
 │   ├── Executive_Summary.png
 │   ├── Drug_Analysis.png
 │   └── Provider_Analysis.png
+│
+├── Drug_Analysis.png
 ├── README.md
 └── requirements.txt
 ```
