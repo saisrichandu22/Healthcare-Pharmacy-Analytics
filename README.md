@@ -148,13 +148,34 @@ Includes:
 
 ---
 
-##  Key Insights
+## Key Insights
 
-- Identified the top 10 highest-cost drugs.
-- Analyzed pharmacy spending across provider specialties.
-- Compared drug costs across different states.
-- Built interactive dashboards with slicers and filters.
-- Designed a Star Schema for efficient reporting.
+### 1. Drug Spending Analysis
+- Analyzed total drug spending and claim volumes across brand and generic medications.
+- Identified the highest-cost drugs using SQL aggregations and Power BI visualizations.
+- Used total drug cost and average cost per claim as key reporting metrics.
+
+**Business Value:** Helps identify major contributors to pharmacy spending and areas for further cost investigation.
+
+### 2. Provider Specialty Analysis
+- Compared pharmacy claim volumes across provider specialties.
+- Analyzed prescribing activity and medication utilization using interactive dashboards.
+
+**Business Value:** Supports investigation of claim-volume differences and prescribing patterns across specialties.
+
+### 3. Geographic Spending Analysis
+- Compared total drug spending across provider states.
+- Developed visualizations to identify geographic spending patterns.
+
+**Business Value:** Helps highlight geographic differences that may warrant further investigation of claim volume and spending.
+
+### 4. Data Modelling and Reporting
+- Designed a star-schema model with pharmacy claims, provider and drug tables.
+- Developed SQL queries for KPI calculation and basic data validation.
+- Built three Power BI dashboard pages: Executive Summary, Drug Analysis and Provider Analysis.
+
+**Business Value:** Demonstrates how SQL and Power BI can turn pharmacy claims data into accessible business reporting.
+  
 
 ---
 
