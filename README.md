@@ -74,6 +74,46 @@ The project follows a **Star Schema**.
 - dim_provider
 - dim_drug
 
+  
+## Data Quality Validation
+
+Implemented SQL-based data quality checks to
+support accurate and reliable pharmacy analytics
+reporting.
+
+### Validation Checks
+
+- **Record Count Validation:** Checks the number
+  of records loaded into fact and dimension tables.
+
+- **Null and Invalid Value Checks:** Identifies
+  missing provider/drug keys, invalid claim counts,
+  and negative drug costs.
+
+- **Referential Integrity:** Detects fact records
+  without matching provider or drug dimension
+  records.
+
+- **Duplicate Detection:** Identifies duplicate
+  provider NPIs and drug name combinations.
+
+- **KPI Reconciliation:** Calculates total claims,
+  total drug cost, and average cost per claim for
+  comparison with Power BI dashboard metrics.
+
+### Business Value
+
+These validation checks help identify potential
+data quality issues, support accurate KPI reporting,
+and improve confidence in analytical results.
+
+### SQL Implementation
+
+[View SQL Validation Queries](SQL/Validation_Queries.sql)
+
+---
+
+
 ---
 
 ##  Dashboard Pages
