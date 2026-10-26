@@ -114,6 +114,58 @@ and improve confidence in analytical results.
 ---
 
 
+## Database Setup
+
+This project uses SQL Server to store and analyze
+cleaned pharmacy claims data.
+
+### Setup Steps
+
+1. Create the database using
+   `SQL/Create_Database.sql`.
+
+2. Create the staging table using
+   `SQL/Create_Staging_Table.sql`.
+
+3. Import `Dataset/clean_pharmacy_claims.csv`
+   into `dbo.stg_pharmacy_claims`.
+
+4. Create the dimension and fact tables using
+   `SQL/Create_Tables.sql`.
+
+5. Review business-key uniqueness and data quality
+   before running `SQL/Load_Star_Schema.sql`.
+
+6. For a fresh, empty database, load the
+   dimension and fact tables using
+   `SQL/Load_Star_Schema.sql`.
+
+7. Validate the data using
+   `SQL/Validation_Queries.sql`.
+
+8. Open the Power BI report from
+   `Dashboard/Healthcare_Pharmacy_Analytics.pbix`.
+
+### Data Pipeline
+
+Raw Pharmacy Data
+→ Python Data Cleaning
+→ Cleaned CSV Dataset
+→ SQL Staging Table
+→ Star Schema
+→ Power BI Dashboards
+
+### Notes
+
+- Use a fresh database for initial setup.
+- Verify imported CSV column mappings.
+- Resolve duplicate dimension keys before
+  loading the fact table.
+- Avoid rerunning data loads without checking
+  for existing records.
+- Update Power BI database connection settings
+  when running the project on another computer.
+
 ---
 
 ##  Dashboard Pages
