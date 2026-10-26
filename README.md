@@ -31,9 +31,10 @@ Healthcare organizations process millions of pharmacy claims every year. Underst
 ---
 
 
+
 ## Project Structure
 
-
+```text
 Healthcare-Pharmacy-Analytics/
 ├── Dashboard/
 │   └── Healthcare_Pharmacy_Analytics.pbix
@@ -54,6 +55,8 @@ Healthcare-Pharmacy-Analytics/
 │   └── Provider_Analysis.png
 ├── README.md
 └── requirements.txt
+```
+
 
 
 ---
