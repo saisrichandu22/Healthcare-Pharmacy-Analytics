@@ -30,18 +30,30 @@ Healthcare organizations process millions of pharmacy claims every year. Underst
 
 ---
 
-##  Project Structure
+
+## Project Structure
 
 
-Healthcare-Pharmacy-Analytics
-
- - Dataset
- - Images
- - PowerBI
- - SQL
- - README.md
- - requirements.txt
- - .gitignore
+Healthcare-Pharmacy-Analytics/
+├── Dashboard/
+│   └── Healthcare_Pharmacy_Analytics.pbix
+├── Dataset/
+│   ├── raw_partd_prescribers.csv
+│   └── clean_pharmacy_claims.csv
+├── SQL/
+│   ├── Create_Database.sql
+│   ├── Create_Tables.sql
+│   ├── Load_Star_Schema.sql
+│   ├── KPI_Queries.sql
+│   └── Validation_Queries.sql
+├── python/
+│   └── clean_pharmacy_data.py
+├── Screenshots/
+│   ├── Executive_Summary.png
+│   ├── Drug_Analysis.png
+│   └── Provider_Analysis.png
+├── README.md
+└── requirements.txt
 
 
 ---
