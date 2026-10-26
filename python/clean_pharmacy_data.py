@@ -1,8 +1,15 @@
+from pathlib import Path
+
 import pandas as pd
 import numpy as np
 
-RAW_FILE = "C:/Users/saisr/OneDrive/Desktop/pharmacy-claims-analytics/data/raw_partd_prescribers.csv"
-OUTPUT_FILE = "C:/Users/saisr/OneDrive/Desktop/pharmacy-claims-analytics/data/clean_pharmacy_claims.csv"
+# Find the main project folder automatically
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Read and save files inside the Dataset folder
+RAW_FILE = BASE_DIR / "Dataset" / "raw_partd_prescribers.csv"
+OUTPUT_FILE = BASE_DIR / "Dataset" / "clean_pharmacy_claims.csv"
+
 
 def clean_currency_numeric(df, column):
     df[column] = pd.to_numeric(df[column], errors="coerce").fillna(0)
