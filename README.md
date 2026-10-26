@@ -20,13 +20,19 @@ Healthcare organizations process millions of pharmacy claims every year. Underst
 
 ---
 
-##  Tech Stack
+
+## Tech Stack
 
 - Microsoft SQL Server
 - SQL Server Management Studio (SSMS)
 - Power BI Desktop
-- SQL
+- SQL and DAX
+- Power Query
+- Python
+- Pandas and NumPy
 - Star Schema Data Modeling
+- Data Cleaning and Validation
+
 
 ---
 
