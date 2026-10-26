@@ -53,6 +53,7 @@ Healthcare-Pharmacy-Analytics/
 │   ├── Load_Star_Schema.sql
 │   ├── KPI_Queries.sql
 │   └── Validation_Queries.sql
+    ├── Create_Staging_Table.sql
 ├── python/
 │   └── clean_pharmacy_data.py
 ├── Screenshots/
